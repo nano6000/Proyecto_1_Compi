@@ -755,7 +755,7 @@ YY_DECL
 		}
 
 	{
-#line 13 "flex.l"
+#line 14 "flex.l"
 
 
 #line 761 "lex.yy.c"
@@ -817,75 +817,77 @@ do_action:	/* This label is used only to access EOF actions. */
 
 case 1:
 YY_RULE_SETUP
-#line 15 "flex.l"
+#line 16 "flex.l"
 return CONSTANT;
 	YY_BREAK
 case 2:
 YY_RULE_SETUP
-#line 16 "flex.l"
+#line 17 "flex.l"
 return KEYWORD;
 	YY_BREAK
 case 3:
 YY_RULE_SETUP
-#line 17 "flex.l"
+#line 18 "flex.l"
 return ID;
 	YY_BREAK
 case 4:
 /* rule 4 can match eol */
 YY_RULE_SETUP
-#line 18 "flex.l"
+#line 19 "flex.l"
 return STRING;
 	YY_BREAK
 case 5:
 YY_RULE_SETUP
-#line 19 "flex.l"
+#line 20 "flex.l"
 return SEMICOLON;
 	YY_BREAK
 case 6:
 YY_RULE_SETUP
-#line 20 "flex.l"
+#line 21 "flex.l"
 return L_BRACKET;
 	YY_BREAK
 case 7:
 YY_RULE_SETUP
-#line 21 "flex.l"
+#line 22 "flex.l"
 return R_BRACKET;
 	YY_BREAK
 case 8:
 YY_RULE_SETUP
-#line 22 "flex.l"
+#line 23 "flex.l"
 return L_PARENT;
 	YY_BREAK
 case 9:
 YY_RULE_SETUP
-#line 23 "flex.l"
+#line 24 "flex.l"
 return R_PARENT;
 	YY_BREAK
 case 10:
 YY_RULE_SETUP
-#line 24 "flex.l"
+#line 25 "flex.l"
 return QUOTE;
 	YY_BREAK
 case 11:
 YY_RULE_SETUP
-#line 25 "flex.l"
+#line 26 "flex.l"
 return APOS;
 	YY_BREAK
 case 12:
 /* rule 12 can match eol */
 YY_RULE_SETUP
-#line 26 "flex.l"
+#line 27 "flex.l"
 ;
 	YY_BREAK
 case 13:
 YY_RULE_SETUP
-#line 27 "flex.l"
+#line 28 "flex.l"
 return CHAR;
 	YY_BREAK
 case 14:
 YY_RULE_SETUP
-#line 29 "flex.l"
+#line 30 "flex.l"
+printf("Unmatched character ");
 ECHO;
+printf("\n");
 	YY_BREAK
 #line 890 "lex.yy.c"
 case YY_STATE_EOF(INITIAL):
@@ -1892,7 +1894,7 @@ void yyfree (void * ptr )
 
 #define YYTABLES_NAME "yytables"
 
-#line 29 "flex.l"
+#line 30 "flex.l"
 
 
 int yywrap(void)

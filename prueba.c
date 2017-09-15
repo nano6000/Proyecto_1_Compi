@@ -1,5 +1,5 @@
-$int main()
+int main()
 {
-	'mb'
+	'mb'$$
 	return 0;
 }
