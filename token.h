@@ -6,3 +6,7 @@
 #define R_BRACKET 6
 #define L_PARENT 7
 #define R_PARENT 8
+#define CHAR 9
+#define STRING 10
+#define QUOTE 11
+#define APOS 12

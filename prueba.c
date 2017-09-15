@@ -1,4 +1,5 @@
-int main()
+$int main()
 {
+	'mb'
 	return 0;
 }
