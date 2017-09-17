@@ -14,5 +14,10 @@ debug: $(OBJS)
 	$(CC) -g -o $(OUT) $(OBJS)
 	gdb $(OUT)
 
+all:
+	rm -f lex.yy.c
+	lex $(FLEX)
+	$(CC) -o $(OUT) $(OBJS) 
+
 run:
 	./$(OUT)
