@@ -9,11 +9,9 @@ QUOTE		\"
 APOS		\'
 STRING		{QUOTE}[.\n]*{QUOTE}
 CHAR 		{APOS}.?{APOS}
-ERROR		{APOS}ID{APOS}
-OPERATOR	\=|\+|\-|\*|\/\/|\%|\+\+|\-\-|\=\=|\!\=|\>|\<|\>\=|\<\=|\!|\&\&|\|\||\~|\&|\||\^|\<\<|\>\>|\.|\?|sizeof|\:|alignof
+OPERATOR	\=|\+|\-|\*|\/|\/\/|\%|\+\+|\-\-|\=\=|\!\=|\>|\<|\>\=|\<\=|\!|\&\&|\|\||\~|\&|\||\^|\<\<|\>\>|\.|\?|sizeof|\:|alignof
 PUNCTUATOR	\(|\)|\{|\}|\;|\[|\]
-COMMENT		[\\\*.*\*\\]
-
+COMMENT		"/*"[^*]*[*]+([^/*][^*]*[*]+)*[/]
 
 %%
 
@@ -24,6 +22,8 @@ COMMENT		[\\\*.*\*\\]
 {PUNCTUATOR}	return PUNCTUATOR;
 {ID}			return ID;
 [ \t\n]			;
+{COMMENT}		;
+.				{printf("ERROR EN LINEA %d : -- Token %s\n", yylineno,yytext);}
 
 %%
 

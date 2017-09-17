@@ -14,8 +14,15 @@ int main(void)
 	token = yylex();
 	while(token) 
 	{
-		printf("%s is set to %s\n", names[token], yytext);
-		token = yylex();
+		if (!names[token])
+		{
+			printf("%s is set to %s\n", names[token], "Syntax Error!");
+		}
+		else
+		{
+			printf("%s is set to %s\n", names[token], yytext);
+			token = yylex();
+		}
 	}
 	return 0;
 }

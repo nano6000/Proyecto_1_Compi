@@ -1,3 +1,4 @@
+#define	ERROR 0
 #define	CONSTANT 1
 #define ID 2
 //#define SEMICOLON 3
