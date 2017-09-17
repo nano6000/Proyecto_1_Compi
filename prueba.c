@@ -1,11 +1,14 @@
 int main()
 {
 	return 0;
+	
+	"a"
+	
 	/* esto es un 
 
 
     sdoije9ro12u }!@$_!@$$~|"}$:!@$}!@:<{{{LP@K$!@M${ QDDQWX|"
     /* comentario */*/
-
-    bbab
+    
+    //otros comentarios /* hola /* */*/
 }

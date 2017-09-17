@@ -7,11 +7,11 @@ KEYWORD		auto|break|case|char|const|continue|default|do|double|else|enum|extern|
 ID			[_a-zA-Z][_a-zA-Z0-9]*
 QUOTE		\"
 APOS		\'
-STRING		{QUOTE}[.\n]*{QUOTE}
+STRING		\"(\\.|[^\\"])*\"
 CHAR 		{APOS}.?{APOS}
 OPERATOR	\=|\+|\-|\*|\/|\/\/|\%|\+\+|\-\-|\=\=|\!\=|\>|\<|\>\=|\<\=|\!|\&\&|\|\||\~|\&|\||\^|\<\<|\>\>|\.|\?|sizeof|\:|alignof
 PUNCTUATOR	\(|\)|\{|\}|\;|\[|\]
-COMMENT		"/*"[^*]*[*]+([^/*][^*]*[*]+)*[/]
+COMMENT		("/*"[^*]*[*]+([^/*][^*]*[*]+)*[/])|"//".*
 
 %%
 
