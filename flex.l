@@ -10,6 +10,8 @@ APOS		\'
 STRING		{QUOTE}[.\n]*{QUOTE}
 CHAR 		{APOS}.?{APOS}
 ERROR		{APOS}ID{APOS}
+OPERATOR	\=|\+|\-|\*|\/\/|\%|\+\+|\-\-|\=\=|\!\=|\>|\<|\>\=|\<\=|\!|\&\&|\|\||\~|\&|\||\^|\<\<|\>\>|\.|\?|sizeof|\:|alignof
+PUNCTUATOR	\(|\)
 
 %%
 
@@ -17,15 +19,9 @@ ERROR		{APOS}ID{APOS}
 {KEYWORD}		return KEYWORD;
 {ID}			return ID;
 {STRING}		return STRING;
-";"				return SEMICOLON;
-"{"				return L_BRACKET;
-"}"				return R_BRACKET;
-"("				return L_PARENT;
-")"				return R_PARENT;
-"\""			return QUOTE;
-"\'"			return APOS;
+{OPERATOR}		return OPERATOR;
+{PUNCTUATOR}	return PUNCTUATOR;
 [ \t\n]			;
-{CHAR}			return CHAR;
 
 %%
 

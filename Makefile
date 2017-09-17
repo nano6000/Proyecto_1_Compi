@@ -7,7 +7,7 @@ compile: $(OBJS)
 	$(CC) -o $(OUT) $(OBJS) 
 
 flex: $(FLEX)
-	rm lex.yy.c
+	rm -f lex.yy.c
 	lex $(FLEX)
 
 debug: $(OBJS)

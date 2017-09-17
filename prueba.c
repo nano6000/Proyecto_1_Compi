@@ -1,5 +1,5 @@
 int main()
 {
-	'mb'$$
+	= + - * // % ++ -- == != > < >= <= ! && || \~ & | ^ << >> \. ? sizeof : alignof
 	return 0;
 }
