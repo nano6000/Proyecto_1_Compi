@@ -218,7 +218,7 @@ int preprocessor(void)
 
 
 void compileLatex(){
-	system("pdflatex latex/result.tex" );
+	system("pdflatex latex/result.tex && evince result.pdf -f" );
 }
 
 int main(void) 
