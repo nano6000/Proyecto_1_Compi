@@ -1,5 +1,5 @@
 CC = gcc
-OBJS = scanner.c lex.yy.c
+OBJS = scanner.c
 FLEX = flex.l
 OUT = scan
 

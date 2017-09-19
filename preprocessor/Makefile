@@ -1,6 +1,6 @@
 CC = gcc
 OBJS = preprocessor.c
-FLEX = flex.l
+FLEX = ../flex.l
 OUT = prepro
 
 compile: $(OBJS)

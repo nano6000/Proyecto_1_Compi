@@ -1,6 +1,5 @@
 \frametitle{C Code analyzed}
 \begin{flushleft}
 \begin{lstlisting}[breaklines]
-@\colorbox{PUNCTUATOR}{\}}@
 \end{lstlisting}
 \end{flushleft}

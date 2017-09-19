@@ -107,10 +107,11 @@
 #define CONSTANT 76
 #define LPARENTHESIS 77
 #define RPARENTHESIS 78
+#define BACKSLASH 79
 
 
-#define INCLUDE 79
-#define DEFINE 80
+#define INCLUDE 80
+#define DEFINE 81
 
 
 #define FILENAME 84

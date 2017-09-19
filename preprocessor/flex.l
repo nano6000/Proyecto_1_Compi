@@ -1,6 +1,6 @@
 %{
 #include <stdio.h>
-#include "../token.h"
+#include "..\token.h"
 int reprocess = 0;
 %}
 

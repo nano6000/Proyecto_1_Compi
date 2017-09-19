@@ -116,10 +116,13 @@ void escapeLatexSpecialChars(char lexeme[]){
     int j;
     for (j=0; j < lenLexeme;j++){
         printf ("Current lexeme being compared: %s\nJ is %d\n", lexeme, j);
-        for (i=0;i< lenListOfChars-1; i++){
+        for (i=0;i< lenListOfChars; i++){
             printf ("--Comparing %c with %c--\n", lexeme[j], charactersToEscape[i]);
             if (lexeme[j] == charactersToEscape[i]){
                 printf("got occurence in j = %d\n", j);
+                if (charactersToEscape[i] == '\\'){
+                    break;
+                }
                 addBackslash(lexeme, j);
                 j+=2;
                 i = -1;

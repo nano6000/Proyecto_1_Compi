@@ -2,18 +2,18 @@
 
 #include <stdlib.h>
 #include <string.h>
-#include <stdio.h>
-#include "lex.yy.c"
+//#include <stdio.h>
+//#include "lex.yy.c"
 
 
 #define MAX_INCLUDE_DEPTH 10
 YY_BUFFER_STATE include_stack[MAX_INCLUDE_DEPTH];
 int include_stack_ptr = 0;
 
-extern int yylex();
+/*extern int yylex();
 extern int yylineno;
 extern char* yytext;
-
+*/
 char* outputName;
 
 void rmQuote(char *d , char *s)
@@ -62,7 +62,7 @@ void read_includes(int token)
 	reset(outputName);
 }
 
-void preprocessor(void) 
+int preprocessor(void) 
 {
 	int token = yylex();
 	

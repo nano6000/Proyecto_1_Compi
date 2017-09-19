@@ -68,6 +68,7 @@ QUESTION_MARK   		\?
 SIZEOF					"sizeof"
 COLON           		\:
 ALIGNOF					"alignof"
+BACKSLASH               \\
 
 QUOTE           \"
 APOS            \'
@@ -91,6 +92,7 @@ COMMENT		    ("/*"[^*]*[*]+([^/*][^*]*[*]+)*[/])|"//".*
 
 
 INCLUDE         "#include"
+DEFINE         "#define"
 
 %%
 
@@ -167,9 +169,11 @@ INCLUDE         "#include"
 {ELIPSIS}               return ELIPSIS;
 {LBRACKET}              return LBRACKET;
 {RBRACKET}              return RBRACKET;
+{BACKSLASH}             return BACKSLASH;
 
 
 {INCLUDE}               return INCLUDE;
+{DEFINE}                return DEFINE;
 
 
 
@@ -180,7 +184,7 @@ INCLUDE         "#include"
 [ \t\n]			return SEPARATOR;
 <<EOF>>         return 0;
 {COMMENT}		;
-.				{printf("TOKEN irreconocible en la linea: %d\n", yylineno);}
+.				{printf("TOKEN irreconocible %s en la linea: %d\n", yytext, yylineno);}
 
 %%
 
