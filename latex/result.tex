@@ -1,0 +1,94 @@
+\documentclass{beamer} %
+\usetheme{CambridgeUS}
+\usepackage[latin1]{inputenc}
+\usefonttheme{professionalfonts}
+\usepackage{verbatim}
+\usepackage{listings}
+\usepackage{xcolor}
+\usepackage{tikz}
+
+\definecolor{KEYWORD}{RGB}{23, 95, 250}
+\definecolor{ID}{RGB}{155, 108, 152}
+\definecolor{CONSTANT}{RGB}{126, 130, 135}
+\definecolor{STRING}{RGB}{57, 200, 154}
+\definecolor{OPERATOR}{RGB}{23, 95, 137}
+\definecolor{PUNCTUATOR}{RGB}{78, 149, 73}
+\definecolor{INCLUDE}{RGB}{23, 95, 250}
+
+\lstset{
+	basicstyle=\ttfamily,
+	escapeinside=@@,
+	postbreak=\mbox{\textcolor{black}{$\hookrightarrow$}\space},
+}
+
+\fboxsep2pt
+
+
+\title[]{C Code Lexical Analysis}
+\author[Bosques \& G. Damazio]{Esteban Bosques Mondol \\ Esteban Gonz\'alez Damazio \\[1\baselineskip]
+	Instituto Tecnol\'ogico de Costa Rica \\
+	Escuela de Computaci\'on\\
+	Compiladores e Int\'erpretes \\
+	II Semestre 2017\\[1\baselineskip]
+	Tools used: \\
+	Flex, C, Beamer,	{\bfseries \large Magic}
+}
+\date{\today}
+
+
+
+
+\begin{document}
+	
+	\begin{frame}
+	\titlepage
+\end{frame}
+
+\begin{frame}{Flex tool}
+	Flex is an open source tool which generates a functional lexical analyzer by using a file created by the user in which regular expressions are declared to match what the programmer needs. It has become extremely popular in the extend that most Linux distributions of today has it installed by default. It is a successor of a tool called Lex which ran on Unix-bases Systems and that has been ported and modernized to work on today's Linux distributions.
+\end{frame}
+
+\begin{frame}{Scanning Process}
+As it was said prior to this moment, Flex uses a set of regular expressions to match patterns in a file. It has a truly powerful engine of matching by regular expressions. Digging in to the process, a regular expression is defined, and then, the programmer can decide what to do when a pattern is matched to every regular expression, such as returning a value or even running a block of C code.
+\end{frame}
+
+
+
+
+
+
+
+\begin{frame}[fragile]{C Code analyzed}
+\begin{flushleft}
+	\begin{lstlisting}[breaklines]
+@\colorbox{INCLUDE}{\#include}@ @\colorbox{OPERATOR}{<}@@\colorbox{ID}{stdio}@@\colorbox{OPERATOR}{.}@@\colorbox{ID}{h}@@\colorbox{OPERATOR}{>}@
+
+@\colorbox{KEYWORD}{int}@ @\colorbox{ID}{main}@@\colorbox{PUNCTUATOR}{(}@@\colorbox{PUNCTUATOR}{)}@
+@\colorbox{PUNCTUATOR}{\{}@
+	@\colorbox{KEYWORD}{int}@ @\colorbox{ID}{pedo}@ @\colorbox{OPERATOR}{=}@ @\colorbox{CONSTANT}{0xCACA}@@\colorbox{PUNCTUATOR}{;}@
+	@\colorbox{KEYWORD}{int}@ @\colorbox{ID}{a}@ @\colorbox{OPERATOR}{=}@ @\colorbox{CONSTANT}{10}@@\colorbox{PUNCTUATOR}{;}@
+	@\colorbox{ID}{printf}@ @\colorbox{PUNCTUATOR}{(}@@\colorbox{STRING}{"uno\%dostres"}@@\colorbox{PUNCTUATOR}{,}@ @\colorbox{ID}{a}@@\colorbox{OPERATOR}{+}@@\colorbox{OPERATOR}{=}@@\colorbox{CONSTANT}{2}@@\colorbox{PUNCTUATOR}{)}@@\colorbox{PUNCTUATOR}{;}@
+    @\colorbox{KEYWORD}{return}@ @\colorbox{CONSTANT}{0}@@\colorbox{PUNCTUATOR}{;}@
+		\end{lstlisting}
+	\end{flushleft}
+\end{frame}
+
+
+\begin{frame}[fragile]{C Code analyzed}
+	\begin{flushleft}
+		\begin{lstlisting}[breaklines]
+@\colorbox{PUNCTUATOR}{\}}@
+		\end{lstlisting}
+	\end{flushleft}
+\end{frame}
+
+\begin{frame}{Statistics}
+The amount of constants is 4\\
+The amount of strings is 1\\
+The amount of IDs is 7\\
+The amount of keywords is 4\\
+The amount of operators is 7\\
+The amount of punctuators is 11\\
+\end{frame}
+
+\end{document}

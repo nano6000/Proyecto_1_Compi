@@ -1,7 +1,8 @@
 %{
-#include "token.h"
+#include <stdio.h>
+#include "../token.h"
+int reprocess = 0;
 %}
-%option yylineno
 
 CONSTANT        (-)?[0-9]+|"0x"[A-F0-9]{1,4}
 AUTO            "auto"
@@ -91,6 +92,8 @@ COMMENT		    ("/*"[^*]*[*]+([^/*][^*]*[*]+)*[/])|"//".*
 
 
 INCLUDE         "#include"
+DEF             "#define"
+FILE            [a-zA-Z0-9]+[.][a-zA-Z0-9]+
 
 %%
 
@@ -174,13 +177,15 @@ INCLUDE         "#include"
 
 
 
-{STRING}		return STRING;
-{CHARACTER}     return CHARACTER;
+{FILE}      return FILENAME;
 {ID}			return ID;
 [ \t\n]			return SEPARATOR;
 <<EOF>>         return 0;
 {COMMENT}		;
-.				{printf("TOKEN irreconocible en la linea: %d\n", yylineno);}
+.				{printf("TOKEN: %s irreconocible en la linea: %d\n", yytext, yylineno);}
+
+
+
 
 %%
 
