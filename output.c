@@ -12,4 +12,7 @@ Quiero dormir!! T-T
 int main()
 {
 	int pedo = 0xCACA;
-	int adios mother fuckers! :)adios mother fuckers! :)adios mother fuckers! :)adios mother fuckers! :)adios mother fuckers! :)adios mother fuckers! :)adios mother fuckers! :)adios mother fuckers! :)adios mother fuckers! :)adios mother fuckers! :)adios mother fuckers! :)adios mother fuckers! :)adios mother fuckers! :)adios mother fuckers! :)adios mother fuckers! :)adios mother fuckers! :)adios mother fuckers! :)adios mother fuckers! :)adios mother fuckers! :)adios mother fuckers! :)adios mother fuckers! :)adios mother fuckers! :)adios mother fuckers! :)adios mother fuckers! :)adios mother fuckers! :)adios mother fuckers! :)adios mother fuckers! :)adios mother fuckers! :)adios mother fuckers! :)adios mother fuckers! :)adios mother fuckers! :)adios mother fuckers! :)
+	int adios mother fuckers! :) = 10;
+	printf ("%d", a+=2);
+    return 0;
+}

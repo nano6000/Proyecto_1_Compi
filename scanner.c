@@ -184,12 +184,14 @@ int preprocessor(void)
 		    
 	    }
 	    if(*replacement!='\0')
-	        fprintf(yyout, "%s", replacement);
+	    {
+	    	fprintf(yyout, "%s", replacement);
 	        reset(replacement);
+	    }
 	    else
 	    	fprintf(yyout, "%s", yytext);
 		getToken();
-	    //printf("Token: %s\n", yytext);
+	    printf("Token: %s\n", yytext);
 		
 		if (token.tokenId == 0)
 		{
