@@ -131,10 +131,10 @@ void replace_define()
 		
 		if (strgcmp(yytext, defineTable[i][0]) != 0)
 		{
-			printf("Lexema 1%s\n", defineTable[i][0]);
-			printf("Lexema 2%s\n", yytext);
+			//printf("Lexema 1%s\n", defineTable[i][0]);
+			//printf("Lexema 2%s\n", yytext);
 			strgcpy(replacement, defineTable[i][1]);
-			printf("Lexema %s\n", replacement);
+			//printf("Lexema %s\n", replacement);
 			break;
 		}
 	}
@@ -191,7 +191,7 @@ int preprocessor(void)
 	    else
 	    	fprintf(yyout, "%s", yytext);
 		getToken();
-	    printf("Token: %s\n", yytext);
+	    //printf("Token: %s\n", yytext);
 		
 		if (token.tokenId == 0)
 		{
@@ -225,6 +225,13 @@ int main(void)
 {
 	cant_define = 0;
 	preprocessor();
+	
+	yyin = fopen( "output.c", "r" );
+
+    if ( ! yyin )
+        printf("No yyin\n");
+
+    yy_switch_to_buffer( yy_create_buffer( yyin, YY_BUF_SIZE ) );
 	
 	getToken();
 	currentLine = token.lineNo;
