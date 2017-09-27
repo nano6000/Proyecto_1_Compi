@@ -197,7 +197,7 @@ int preprocessor(void)
 		{
 			if ( --include_stack_ptr < 0 )
 		    {
-		        yyterminate();
+		        break;
 		    }
 		
 		    else
@@ -218,7 +218,7 @@ int preprocessor(void)
 
 
 void compileLatex(){
-	system("pdflatex latex/result.tex && evince result.pdf -f" );
+	//system("pdflatex latex/result.tex && evince result.pdf -f" );
 }
 
 int main(void) 
@@ -232,31 +232,39 @@ int main(void)
         printf("No yyin\n");
 
     yy_switch_to_buffer( yy_create_buffer( yyin, YY_BUF_SIZE ) );
+
+    FILE* out_file;
+	out_file = fopen("scannedFile.txt", "w");
+    yyout = out_file;
 	
 	getToken();
 	currentLine = token.lineNo;
-	system("rm latex/result.tex");
-	copy(TEMPLATE_HEAD, BEAMER_FILE);
+	//system("rm latex/result.tex");
+	//copy(TEMPLATE_HEAD, BEAMER_FILE);
 	while(token.tokenId) 
 	{
 		
-		while (currentLine == token.lineNo && token.tokenId){
+		//while (currentLine == token.lineNo && token.tokenId){
 			
-			if (token.tokenId==100){
+			fprintf(yyout, "%s", getTokenFamily(token.tokenId));
+			/*if (token.tokenId==100){
 				writeSeparator(token.lexeme);
 				getToken();
 				continue;
 			}
 			//printf("%s has id %d, is a lexeme from %s in line %d and is of family %s\n", token.lexeme, token.tokenId ,token.lexicalCategory, token.lineNo, token.CTokenFamily);
-			addToken(token); 
+			addToken(token); */
 			getToken();
-		}
-		currentLine = token.lineNo;
+		//}
+		//currentLine = token.lineNo;
 	}
-	beamerEndCCode();
-	writeStatistics();
-	appendToFile(BEAMER_FILE, "\n\n\\end{document}");
-	compileLatex();
+	//beamerEndCCode();
+	//writeStatistics();
+	//appendToFile(BEAMER_FILE, "\n\n\\end{document}");
+	//compileLatex();
+	yyterminate();
+	fclose(out_file);
+	free(outputName);
 	return 0;
 }
 
@@ -289,5 +297,8 @@ char *getTokenFamily(int tokenId){
 	else if (BETWEEN(tokenId, 63, 78)){
 		return "PUNCTUATOR";
 	}
-	return 0;
+	else if (token.tokenId == 100){
+		return yytext;
+	}
+	return "\n";
 }
