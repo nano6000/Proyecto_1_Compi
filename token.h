@@ -121,6 +121,8 @@
 #define OPERATOR 85
 #define PUNCTUATOR 86
 
+#define SLASH 87
+
 #define SEPARATOR 100
 
 

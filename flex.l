@@ -45,6 +45,7 @@ PLUS				    \+
 MINUS		        	\-
 STAR		        	\*
 SLASHX2     			\/\/
+SLASH 		   			\/
 MODULO					\%
 PLUSX2  				\+\+
 MINUSX2 				\-\-
@@ -170,6 +171,8 @@ DEFINE         "#define"
 {LBRACKET}              return LBRACKET;
 {RBRACKET}              return RBRACKET;
 {BACKSLASH}             return BACKSLASH;
+{SLASHX2}             return SLASHX2;
+{SLASH}             return SLASH;
 
 
 {INCLUDE}               return INCLUDE;

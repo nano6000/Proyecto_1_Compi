@@ -370,8 +370,8 @@ static void yynoreturn yy_fatal_error ( const char* msg  );
 	(yy_hold_char) = *yy_cp; \
 	*yy_cp = '\0'; \
 	(yy_c_buf_p) = yy_cp;
-#define YY_NUM_RULES 80
-#define YY_END_OF_BUFFER 81
+#define YY_NUM_RULES 82
+#define YY_END_OF_BUFFER 83
 /* This struct is not used in this scanner,
    but its presence is necessary. */
 struct yy_trans_info
@@ -381,32 +381,32 @@ struct yy_trans_info
 	};
 static const flex_int16_t yy_accept[243] =
     {   0,
-        0,    0,   81,   79,   77,   77,   46,   60,   79,   40,
-       50,   61,   64,   65,   39,   37,   66,   38,   55,   79,
-        1,    1,   58,   67,   43,   36,   42,   56,   76,   69,
-       71,   70,   52,   76,   76,   76,   76,   76,   76,   76,
-       76,   76,   76,   76,   76,   76,   76,   76,   62,   51,
-       63,   49,   41,    0,   74,    0,    0,    0,   47,    0,
-        1,    0,    0,   78,    0,   53,   45,   44,   54,   76,
-       76,   76,   76,   76,   76,   76,   76,    9,   76,   76,
-       76,   76,   76,   76,   18,   76,   76,   76,   76,   76,
-       76,   76,   76,   76,   76,   76,   48,    0,    0,    5,
+        0,    0,   83,   81,   79,   79,   46,   60,   81,   40,
+       50,   61,   64,   65,   39,   37,   66,   38,   55,   73,
+        1,    1,   58,   67,   43,   36,   42,   56,   78,   69,
+       71,   70,   52,   78,   78,   78,   78,   78,   78,   78,
+       78,   78,   78,   78,   78,   78,   78,   78,   62,   51,
+       63,   49,   41,    0,   76,    0,    0,    0,   47,    0,
+        1,    0,    0,   72,    0,   53,   45,   44,   54,   78,
+       78,   78,   78,   78,   78,   78,   78,    9,   78,   78,
+       78,   78,   78,   78,   18,   78,   78,   78,   78,   78,
+       78,   78,   78,   78,   78,   78,   48,    0,    0,    5,
 
-       68,    0,    0,   78,    1,   76,   76,   76,   76,   76,
-       76,   76,   76,   76,   76,   76,   76,   15,   76,   76,
-       20,   76,   76,   76,   76,   76,   76,   76,   76,   76,
-       76,   76,   76,   76,   76,   76,   76,    0,    0,    0,
-       78,    1,   76,    2,   76,    4,   75,   76,   76,   76,
-       76,   11,   12,   76,   76,   76,   17,   76,   21,   76,
-       76,   76,   76,   76,   76,   76,   76,   76,   76,   76,
-       76,   33,   76,   76,    0,    0,    0,    0,    1,   76,
-        3,    6,   76,   76,   76,   76,   14,   76,   76,   76,
-       76,   76,   25,   76,   76,   76,   76,   76,   76,   31,
+       68,    0,    0,   80,    1,   78,   78,   78,   78,   78,
+       78,   78,   78,   78,   78,   78,   78,   15,   78,   78,
+       20,   78,   78,   78,   78,   78,   78,   78,   78,   78,
+       78,   78,   78,   78,   78,   78,   78,    0,    0,    0,
+       80,    1,   78,    2,   78,    4,   77,   78,   78,   78,
+       78,   11,   12,   78,   78,   78,   17,   78,   21,   78,
+       78,   78,   78,   78,   78,   78,   78,   78,   78,   78,
+       78,   33,   78,   78,    0,    0,    0,    0,    1,   78,
+        3,    6,   78,   78,   78,   78,   14,   78,   78,   78,
+       78,   78,   25,   78,   78,   78,   78,   78,   78,   31,
 
-       76,   76,   35,    0,    0,    1,   76,   76,   76,   10,
-       13,   76,   19,   76,   76,   24,   26,   57,   27,   28,
-       29,   76,   76,   76,   73,    0,   59,   76,    8,   16,
-       76,   76,   30,   76,   76,   72,    7,   22,   23,   32,
+       78,   78,   35,    0,    0,    1,   78,   78,   78,   10,
+       13,   78,   19,   78,   78,   24,   26,   57,   27,   28,
+       29,   78,   78,   78,   75,    0,   59,   78,    8,   16,
+       78,   78,   30,   78,   78,   74,    7,   22,   23,   32,
        34,    0
     } ;
 
@@ -599,13 +599,13 @@ static const flex_int16_t yy_chk[348] =
     } ;
 
 /* Table of booleans, true if rule could match eol. */
-static const flex_int32_t yy_rule_can_match_eol[81] =
+static const flex_int32_t yy_rule_can_match_eol[83] =
     {   0,
 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
     0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
     0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
-    0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 1, 0, 
-    0,     };
+    0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 
+    1, 0, 0,     };
 
 static yy_state_type yy_last_accepting_state;
 static char *yy_last_accepting_cpos;
@@ -842,7 +842,7 @@ YY_DECL
 		}
 
 	{
-#line 97 "flex.l"
+#line 98 "flex.l"
 
 
 #line 848 "lex.yy.c"
@@ -914,412 +914,422 @@ do_action:	/* This label is used only to access EOF actions. */
 
 case 1:
 YY_RULE_SETUP
-#line 99 "flex.l"
+#line 100 "flex.l"
 return CONSTANT;
 	YY_BREAK
 case 2:
 YY_RULE_SETUP
-#line 101 "flex.l"
+#line 102 "flex.l"
 return AUTO;
 	YY_BREAK
 case 3:
 YY_RULE_SETUP
-#line 102 "flex.l"
+#line 103 "flex.l"
 return BREAK;
 	YY_BREAK
 case 4:
 YY_RULE_SETUP
-#line 103 "flex.l"
+#line 104 "flex.l"
 return CASE;
 	YY_BREAK
 case 5:
 YY_RULE_SETUP
-#line 104 "flex.l"
+#line 105 "flex.l"
 return CHAR;
 	YY_BREAK
 case 6:
 YY_RULE_SETUP
-#line 105 "flex.l"
+#line 106 "flex.l"
 return CONST;
 	YY_BREAK
 case 7:
 YY_RULE_SETUP
-#line 106 "flex.l"
+#line 107 "flex.l"
 return CONTINUE;
 	YY_BREAK
 case 8:
 YY_RULE_SETUP
-#line 107 "flex.l"
+#line 108 "flex.l"
 return DEFAULT;
 	YY_BREAK
 case 9:
 YY_RULE_SETUP
-#line 108 "flex.l"
+#line 109 "flex.l"
 return DO;
 	YY_BREAK
 case 10:
 YY_RULE_SETUP
-#line 109 "flex.l"
+#line 110 "flex.l"
 return DOUBLE;
 	YY_BREAK
 case 11:
 YY_RULE_SETUP
-#line 110 "flex.l"
+#line 111 "flex.l"
 return ELSE;
 	YY_BREAK
 case 12:
 YY_RULE_SETUP
-#line 111 "flex.l"
+#line 112 "flex.l"
 return ENUM;
 	YY_BREAK
 case 13:
 YY_RULE_SETUP
-#line 112 "flex.l"
+#line 113 "flex.l"
 return EXTERN;
 	YY_BREAK
 case 14:
 YY_RULE_SETUP
-#line 113 "flex.l"
+#line 114 "flex.l"
 return FLOAT;
 	YY_BREAK
 case 15:
 YY_RULE_SETUP
-#line 114 "flex.l"
+#line 115 "flex.l"
 return FOR;
 	YY_BREAK
 case 16:
 YY_RULE_SETUP
-#line 115 "flex.l"
+#line 116 "flex.l"
 return FORTRAN;
 	YY_BREAK
 case 17:
 YY_RULE_SETUP
-#line 116 "flex.l"
+#line 117 "flex.l"
 return GOTO;
 	YY_BREAK
 case 18:
 YY_RULE_SETUP
-#line 117 "flex.l"
+#line 118 "flex.l"
 return IF;
 	YY_BREAK
 case 19:
 YY_RULE_SETUP
-#line 118 "flex.l"
+#line 119 "flex.l"
 return INLINE;
 	YY_BREAK
 case 20:
 YY_RULE_SETUP
-#line 119 "flex.l"
+#line 120 "flex.l"
 return INT;
 	YY_BREAK
 case 21:
 YY_RULE_SETUP
-#line 120 "flex.l"
+#line 121 "flex.l"
 return LONG;
 	YY_BREAK
 case 22:
 YY_RULE_SETUP
-#line 121 "flex.l"
+#line 122 "flex.l"
 return REGISTER;
 	YY_BREAK
 case 23:
 YY_RULE_SETUP
-#line 122 "flex.l"
+#line 123 "flex.l"
 return RESTRICT;
 	YY_BREAK
 case 24:
 YY_RULE_SETUP
-#line 123 "flex.l"
+#line 124 "flex.l"
 return RETURN;
 	YY_BREAK
 case 25:
 YY_RULE_SETUP
-#line 124 "flex.l"
+#line 125 "flex.l"
 return SHORT;
 	YY_BREAK
 case 26:
 YY_RULE_SETUP
-#line 125 "flex.l"
+#line 126 "flex.l"
 return SIGNED;
 	YY_BREAK
 case 27:
 YY_RULE_SETUP
-#line 126 "flex.l"
+#line 127 "flex.l"
 return STATIC;
 	YY_BREAK
 case 28:
 YY_RULE_SETUP
-#line 127 "flex.l"
+#line 128 "flex.l"
 return STRUCT;
 	YY_BREAK
 case 29:
 YY_RULE_SETUP
-#line 128 "flex.l"
+#line 129 "flex.l"
 return SWITCH;
 	YY_BREAK
 case 30:
 YY_RULE_SETUP
-#line 129 "flex.l"
+#line 130 "flex.l"
 return TYPEDEF;
 	YY_BREAK
 case 31:
 YY_RULE_SETUP
-#line 130 "flex.l"
+#line 131 "flex.l"
 return UNION;
 	YY_BREAK
 case 32:
 YY_RULE_SETUP
-#line 131 "flex.l"
+#line 132 "flex.l"
 return UNSIGNED;
 	YY_BREAK
 case 33:
 YY_RULE_SETUP
-#line 132 "flex.l"
+#line 133 "flex.l"
 return VOID;
 	YY_BREAK
 case 34:
 YY_RULE_SETUP
-#line 133 "flex.l"
+#line 134 "flex.l"
 return VOLATILE;
 	YY_BREAK
 case 35:
 YY_RULE_SETUP
-#line 134 "flex.l"
+#line 135 "flex.l"
 return WHILE;
 	YY_BREAK
 case 36:
 YY_RULE_SETUP
-#line 137 "flex.l"
+#line 138 "flex.l"
 return EQUALS;
 	YY_BREAK
 case 37:
 YY_RULE_SETUP
-#line 138 "flex.l"
+#line 139 "flex.l"
 return PLUS;
 	YY_BREAK
 case 38:
 YY_RULE_SETUP
-#line 139 "flex.l"
+#line 140 "flex.l"
 return MINUS;
 	YY_BREAK
 case 39:
 YY_RULE_SETUP
-#line 140 "flex.l"
+#line 141 "flex.l"
 return STAR;
 	YY_BREAK
 case 40:
 YY_RULE_SETUP
-#line 141 "flex.l"
+#line 142 "flex.l"
 return MODULO;
 	YY_BREAK
 case 41:
 YY_RULE_SETUP
-#line 142 "flex.l"
+#line 143 "flex.l"
 return EXCALAMATION_EQUALS;
 	YY_BREAK
 case 42:
 YY_RULE_SETUP
-#line 143 "flex.l"
+#line 144 "flex.l"
 return GREATER_THAN;
 	YY_BREAK
 case 43:
 YY_RULE_SETUP
-#line 144 "flex.l"
+#line 145 "flex.l"
 return LESS_THAN;
 	YY_BREAK
 case 44:
 YY_RULE_SETUP
-#line 145 "flex.l"
+#line 146 "flex.l"
 return GREATER_THAN_EQUALS;
 	YY_BREAK
 case 45:
 YY_RULE_SETUP
-#line 146 "flex.l"
+#line 147 "flex.l"
 return LESSER_THAN_EQUALS;
 	YY_BREAK
 case 46:
 YY_RULE_SETUP
-#line 147 "flex.l"
+#line 148 "flex.l"
 return EXCALAMATION;
 	YY_BREAK
 case 47:
 YY_RULE_SETUP
-#line 148 "flex.l"
+#line 149 "flex.l"
 return AMEPSANDX2;
 	YY_BREAK
 case 48:
 YY_RULE_SETUP
-#line 149 "flex.l"
+#line 150 "flex.l"
 return PIPEX2;
 	YY_BREAK
 case 49:
 YY_RULE_SETUP
-#line 150 "flex.l"
+#line 151 "flex.l"
 return TILDE;
 	YY_BREAK
 case 50:
 YY_RULE_SETUP
-#line 151 "flex.l"
+#line 152 "flex.l"
 return AMPERSAND;
 	YY_BREAK
 case 51:
 YY_RULE_SETUP
-#line 152 "flex.l"
+#line 153 "flex.l"
 return PIPE;
 	YY_BREAK
 case 52:
 YY_RULE_SETUP
-#line 153 "flex.l"
+#line 154 "flex.l"
 return CARET;
 	YY_BREAK
 case 53:
 YY_RULE_SETUP
-#line 154 "flex.l"
+#line 155 "flex.l"
 return SHL;
 	YY_BREAK
 case 54:
 YY_RULE_SETUP
-#line 155 "flex.l"
+#line 156 "flex.l"
 return SHR;
 	YY_BREAK
 case 55:
 YY_RULE_SETUP
-#line 156 "flex.l"
+#line 157 "flex.l"
 return DOT;
 	YY_BREAK
 case 56:
 YY_RULE_SETUP
-#line 157 "flex.l"
+#line 158 "flex.l"
 return QUESTION_MARK;
 	YY_BREAK
 case 57:
 YY_RULE_SETUP
-#line 158 "flex.l"
+#line 159 "flex.l"
 return SIZEOF;
 	YY_BREAK
 case 58:
 YY_RULE_SETUP
-#line 159 "flex.l"
+#line 160 "flex.l"
 return COLON;
 	YY_BREAK
 case 59:
 YY_RULE_SETUP
-#line 160 "flex.l"
+#line 161 "flex.l"
 return ALIGNOF;
 	YY_BREAK
 case 60:
 YY_RULE_SETUP
-#line 161 "flex.l"
+#line 162 "flex.l"
 return QUOTE;
 	YY_BREAK
 case 61:
 YY_RULE_SETUP
-#line 162 "flex.l"
+#line 163 "flex.l"
 return APOS;
 	YY_BREAK
 case 62:
 YY_RULE_SETUP
-#line 163 "flex.l"
+#line 164 "flex.l"
 return LBRACE;
 	YY_BREAK
 case 63:
 YY_RULE_SETUP
-#line 164 "flex.l"
+#line 165 "flex.l"
 return RBRACE;
 	YY_BREAK
 case 64:
 YY_RULE_SETUP
-#line 165 "flex.l"
+#line 166 "flex.l"
 return LPARENTHESIS;
 	YY_BREAK
 case 65:
 YY_RULE_SETUP
-#line 166 "flex.l"
+#line 167 "flex.l"
 return RPARENTHESIS;
 	YY_BREAK
 case 66:
 YY_RULE_SETUP
-#line 167 "flex.l"
+#line 168 "flex.l"
 return COMMA;
 	YY_BREAK
 case 67:
 YY_RULE_SETUP
-#line 168 "flex.l"
+#line 169 "flex.l"
 return SEMICOLON;
 	YY_BREAK
 case 68:
 YY_RULE_SETUP
-#line 169 "flex.l"
+#line 170 "flex.l"
 return ELIPSIS;
 	YY_BREAK
 case 69:
 YY_RULE_SETUP
-#line 170 "flex.l"
+#line 171 "flex.l"
 return LBRACKET;
 	YY_BREAK
 case 70:
 YY_RULE_SETUP
-#line 171 "flex.l"
+#line 172 "flex.l"
 return RBRACKET;
 	YY_BREAK
 case 71:
 YY_RULE_SETUP
-#line 172 "flex.l"
+#line 173 "flex.l"
 return BACKSLASH;
 	YY_BREAK
 case 72:
 YY_RULE_SETUP
-#line 175 "flex.l"
-return INCLUDE;
+#line 174 "flex.l"
+return SLASHX2;
 	YY_BREAK
 case 73:
 YY_RULE_SETUP
-#line 176 "flex.l"
-return DEFINE;
+#line 175 "flex.l"
+return SLASH;
 	YY_BREAK
 case 74:
-/* rule 74 can match eol */
 YY_RULE_SETUP
-#line 181 "flex.l"
-return STRING;
+#line 178 "flex.l"
+return INCLUDE;
 	YY_BREAK
 case 75:
 YY_RULE_SETUP
-#line 182 "flex.l"
-return CHARACTER;
+#line 179 "flex.l"
+return DEFINE;
 	YY_BREAK
 case 76:
-YY_RULE_SETUP
-#line 183 "flex.l"
-return ID;
-	YY_BREAK
-case 77:
-/* rule 77 can match eol */
+/* rule 76 can match eol */
 YY_RULE_SETUP
 #line 184 "flex.l"
+return STRING;
+	YY_BREAK
+case 77:
+YY_RULE_SETUP
+#line 185 "flex.l"
+return CHARACTER;
+	YY_BREAK
+case 78:
+YY_RULE_SETUP
+#line 186 "flex.l"
+return ID;
+	YY_BREAK
+case 79:
+/* rule 79 can match eol */
+YY_RULE_SETUP
+#line 187 "flex.l"
 return SEPARATOR;
 	YY_BREAK
 case YY_STATE_EOF(INITIAL):
-#line 185 "flex.l"
+#line 188 "flex.l"
 return 0;
 	YY_BREAK
-case 78:
-/* rule 78 can match eol */
-YY_RULE_SETUP
-#line 186 "flex.l"
-;
-	YY_BREAK
-case 79:
-YY_RULE_SETUP
-#line 187 "flex.l"
-{printf("TOKEN irreconocible %s en la linea: %d\n", yytext, yylineno);}
-	YY_BREAK
 case 80:
+/* rule 80 can match eol */
 YY_RULE_SETUP
 #line 189 "flex.l"
+;
+	YY_BREAK
+case 81:
+YY_RULE_SETUP
+#line 190 "flex.l"
+{printf("TOKEN irreconocible %s en la linea: %d\n", yytext, yylineno);}
+	YY_BREAK
+case 82:
+YY_RULE_SETUP
+#line 192 "flex.l"
 ECHO;
 	YY_BREAK
-#line 1322 "lex.yy.c"
+#line 1332 "lex.yy.c"
 
 	case YY_END_OF_BUFFER:
 		{
@@ -2334,7 +2344,7 @@ void yyfree (void * ptr )
 
 #define YYTABLES_NAME "yytables"
 
-#line 189 "flex.l"
+#line 192 "flex.l"
 
 
 int yywrap(void)

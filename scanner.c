@@ -246,7 +246,7 @@ int main(void)
 		
 		//while (currentLine == token.lineNo && token.tokenId){
 			
-			fprintf(yyout, "%s", getTokenFamily(token.tokenId));
+			fprintf(yyout, "%s ", getTokenFamily(token.tokenId));
 			/*if (token.tokenId==100){
 				writeSeparator(token.lexeme);
 				getToken();
